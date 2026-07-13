@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavola - Cooking Made Simple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Tavola</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Tavola</h1>
+            <p>Discover authentic recipes and cooking tips</p>
+            <button class="cta-button" onclick="document.getElementById('recipes').scrollIntoView({behavior: 'smooth'})">Explore Recipes</button>
+        </div>
+    </section>
+
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <h2>Featured Recipes</h2>
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <div class="recipe-image" style="background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);"></div>
+                    <h3>Pasta Carbonara</h3>
+                    <p>Classic Italian pasta with creamy sauce</p>
+                    <span class="time">⏱️ 20 mins</span>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);"></div>
+                    <h3>Risotto Milanese</h3>
+                    <p>Creamy saffron rice from Milan</p>
+                    <span class="time">⏱️ 35 mins</span>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image" style="background: linear-gradient(135deg, #F38181 0%, #AA96DA 100%);"></div>
+                    <h3>Tiramisu</h3>
+                    <p>Delicious Italian dessert</p>
+                    <span class="time">⏱️ 15 mins (+ chilling)</span>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image" style="background: linear-gradient(135deg, #FCBAD3 0%, #A6C0FE 100%);"></div>
+                    <h3>Bruschetta</h3>
+                    <p>Toasted bread with fresh toppings</p>
+                    <span class="time">⏱️ 10 mins</span>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image" style="background: linear-gradient(135deg, #FFB347 0%, #FFCC99 100%);"></div>
+                    <h3>Pesto Genovese</h3>
+                    <p>Fresh basil sauce for pasta</p>
+                    <span class="time">⏱️ 5 mins</span>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Minestrone</h3>
+                    <p>Hearty vegetable soup</p>
+                    <span class="time">⏱️ 40 mins</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Tavola</h2>
+            <p>Tavola brings authentic Italian cooking to your kitchen. From traditional recipes passed down through generations to modern twists on classic dishes, we're here to inspire your culinary journey.</p>
+            <div class="about-features">
+                <div class="feature">
+                    <span class="icon">👨‍🍳</span>
+                    <h3>Expert Recipes</h3>
+                    <p>Curated by experienced chefs</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🌱</span>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Simple, quality ingredients</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">⚡</span>
+                    <h3>Quick & Easy</h3>
+                    <p>No complicated techniques</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tavola. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
