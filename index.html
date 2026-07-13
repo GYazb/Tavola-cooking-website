@@ -10,8 +10,9 @@
     <header class="header">
         <nav class="navbar">
             <div class="container">
-                <div class="logo">Tavola</div>
-                <ul class="nav-links">
+                <div class="logo">🍽️ Tavola</div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#recipes">Recipes</a></li>
                     <li><a href="#about">About</a></li>
@@ -23,9 +24,11 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <h1>Welcome to Tavola</h1>
-            <p>Discover authentic recipes and cooking tips</p>
-            <button class="cta-button" onclick="document.getElementById('recipes').scrollIntoView({behavior: 'smooth'})">Explore Recipes</button>
+            <div class="hero-content">
+                <h1>Welcome to Tavola</h1>
+                <p>Discover authentic Italian recipes and cooking tips</p>
+                <button class="cta-button" onclick="document.getElementById('recipes').scrollIntoView({behavior: 'smooth'})">Explore Recipes</button>
+            </div>
         </div>
     </section>
 
@@ -34,45 +37,93 @@
             <h2>Featured Recipes</h2>
             <div class="recipe-grid">
                 <div class="recipe-card">
-                    <div class="recipe-image" style="background: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);"></div>
-                    <h3>Pasta Carbonara</h3>
-                    <p>Classic Italian pasta with creamy sauce</p>
-                    <span class="time">⏱️ 20 mins</span>
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop" alt="Pasta Carbonara">
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Pasta Carbonara</h3>
+                        <p>Classic Italian pasta with creamy sauce</p>
+                        <div class="recipe-meta">
+                            <span class="time">⏱️ 20 mins</span>
+                            <span class="difficulty">📊 Easy</span>
+                        </div>
+                        <a href="#" class="recipe-link">View Recipe →</a>
+                    </div>
                 </div>
 
                 <div class="recipe-card">
-                    <div class="recipe-image" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);"></div>
-                    <h3>Risotto Milanese</h3>
-                    <p>Creamy saffron rice from Milan</p>
-                    <span class="time">⏱️ 35 mins</span>
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1565613535556-7f27e50ffd3e?w=400&h=300&fit=crop" alt="Risotto Milanese">
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Risotto Milanese</h3>
+                        <p>Creamy saffron rice from Milan</p>
+                        <div class="recipe-meta">
+                            <span class="time">⏱️ 35 mins</span>
+                            <span class="difficulty">📊 Medium</span>
+                        </div>
+                        <a href="#" class="recipe-link">View Recipe →</a>
+                    </div>
                 </div>
 
                 <div class="recipe-card">
-                    <div class="recipe-image" style="background: linear-gradient(135deg, #F38181 0%, #AA96DA 100%);"></div>
-                    <h3>Tiramisu</h3>
-                    <p>Delicious Italian dessert</p>
-                    <span class="time">⏱️ 15 mins (+ chilling)</span>
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1571115764595-644a1f80121e?w=400&h=300&fit=crop" alt="Tiramisu">
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Tiramisu</h3>
+                        <p>Delicious Italian dessert</p>
+                        <div class="recipe-meta">
+                            <span class="time">⏱️ 15 mins (+ chilling)</span>
+                            <span class="difficulty">📊 Easy</span>
+                        </div>
+                        <a href="#" class="recipe-link">View Recipe →</a>
+                    </div>
                 </div>
 
                 <div class="recipe-card">
-                    <div class="recipe-image" style="background: linear-gradient(135deg, #FCBAD3 0%, #A6C0FE 100%);"></div>
-                    <h3>Bruschetta</h3>
-                    <p>Toasted bread with fresh toppings</p>
-                    <span class="time">⏱️ 10 mins</span>
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop" alt="Bruschetta">
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Bruschetta</h3>
+                        <p>Toasted bread with fresh toppings</p>
+                        <div class="recipe-meta">
+                            <span class="time">⏱️ 10 mins</span>
+                            <span class="difficulty">📊 Easy</span>
+                        </div>
+                        <a href="#" class="recipe-link">View Recipe →</a>
+                    </div>
                 </div>
 
                 <div class="recipe-card">
-                    <div class="recipe-image" style="background: linear-gradient(135deg, #FFB347 0%, #FFCC99 100%);"></div>
-                    <h3>Pesto Genovese</h3>
-                    <p>Fresh basil sauce for pasta</p>
-                    <span class="time">⏱️ 5 mins</span>
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd93b61?w=400&h=300&fit=crop" alt="Pesto Genovese">
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Pesto Genovese</h3>
+                        <p>Fresh basil sauce for pasta</p>
+                        <div class="recipe-meta">
+                            <span class="time">⏱️ 5 mins</span>
+                            <span class="difficulty">📊 Easy</span>
+                        </div>
+                        <a href="#" class="recipe-link">View Recipe →</a>
+                    </div>
                 </div>
 
                 <div class="recipe-card">
-                    <div class="recipe-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    <h3>Minestrone</h3>
-                    <p>Hearty vegetable soup</p>
-                    <span class="time">⏱️ 40 mins</span>
+                    <div class="recipe-image">
+                        <img src="https://images.unsplash.com/photo-1547069981-4d71bcdd2085?w=400&h=300&fit=crop" alt="Minestrone">
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Minestrone</h3>
+                        <p>Hearty vegetable soup</p>
+                        <div class="recipe-meta">
+                            <span class="time">⏱️ 40 mins</span>
+                            <span class="difficulty">📊 Medium</span>
+                        </div>
+                        <a href="#" class="recipe-link">View Recipe →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,8 +131,16 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2>About Tavola</h2>
-            <p>Tavola brings authentic Italian cooking to your kitchen. From traditional recipes passed down through generations to modern twists on classic dishes, we're here to inspire your culinary journey.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Tavola</h2>
+                    <p>Tavola brings authentic Italian cooking to your kitchen. From traditional recipes passed down through generations to modern twists on classic dishes, we're here to inspire your culinary journey.</p>
+                    <p>Our mission is to make cooking accessible, enjoyable, and delicious for everyone.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Italian cooking">
+                </div>
+            </div>
             <div class="about-features">
                 <div class="feature">
                     <span class="icon">👨‍🍳</span>
@@ -105,22 +164,78 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get in Touch</h2>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone (optional)">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div class="form-message" id="formMessage"></div>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Rome, Italy</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:hello@tavola.com">hello@tavola.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+390612345678">+39 06 1234 5678</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Tavola. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tavola</h4>
+                    <p>Authentic Italian cooking for everyone</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tavola. All rights reserved.</p>
             </div>
         </div>
     </footer>
